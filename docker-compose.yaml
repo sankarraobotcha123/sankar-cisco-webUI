@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  sankar-ui-app:
+    image: sankar-web:app$BUILD_NUMBER
+    build: .
+    container_name: sankarc1
+    ports:
+    - 1234:80
